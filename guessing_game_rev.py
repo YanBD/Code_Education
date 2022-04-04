@@ -5,14 +5,14 @@ print('Enter -1 to generate a new number')
 print('Enter 0 to end at any point ')
 x = r.randint(1, 100)
 a = int(input('Pick a number between 1 - 100: '))
-print(x)
+print()
 
 while a != x:
     if a == -1:
         print('New random number will be generated')
         x = r.randint(1, 100)
         a = int(input('Pick a number between 1 - 100: '))
-        print(x)
+        print()
     if a >= 100 or a <= -2:
         print('Number is outside the range of 1 - 100')
         a = int(input('Pick a number between 1 - 100: '))
